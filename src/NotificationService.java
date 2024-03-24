@@ -8,6 +8,7 @@ public class NotificationService {
     }
 
     public void reserve(User user,Movie movieType){
+
         customers.get(movieType).add(user);
     }
     public void unreserve(User user,Movie movieType){
@@ -16,7 +17,9 @@ public class NotificationService {
     }
 
     public void notifyUser(Movie movieType){
+        System.out.println("Notification: The movie " + movieType.getName() + " in genre " + movieType.getGenre() + " is about to start.");
         customers.get(movieType).forEach(user -> user.update(movieType));
-        }
     }
+
+}
 
