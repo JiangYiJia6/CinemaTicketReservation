@@ -2,6 +2,13 @@ public class User implements MovieList{
     private String name;
     private Cinema cinema;
 
+    private Seat seat;
+
+    public String getName(){
+
+        return name;
+    }
+
 
 
     public User(String name,Cinema cinema){
@@ -10,7 +17,9 @@ public class User implements MovieList{
     }
 
     public void update(Movie movieType){
-        System.out.println("Hey " + name + ", the movie " + movieType.getName() + " is about to start.");
+        System.out.println("Hey " + name + ", the movie " +
+                movieType.getName() +" at "+cinema.showtime+" in salle"+cinema.salle+
+                " is about to start. ");
     }
     public void rateMovie(Movie movieType, int score) {
         cinema.rateMovie(movieType, score);
