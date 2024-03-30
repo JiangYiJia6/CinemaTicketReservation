@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03f1121b-5021-40b1-b078-177a4d0b73eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ErrorGenre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CinemaTicketReservation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CinemaTicketReservation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Cinema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Cinema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/NotificationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cinema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MovieList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRecommendationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +28,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/yijiajiang/Documents/GitHub/CinemaTicketReservation"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yijiajiang/Documents/GitHub/CinemaTicketReservation&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.MovieRecommendationTest.testRecommendMoviesByGenre">
     <configuration name="MovieRecommendationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CinemaTicketReservation" />
