@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03f1121b-5021-40b1-b078-177a4d0b73eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Seat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ErrorGenre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CinemaTicketReservation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CinemaTicketReservation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Cinema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Cinema.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Movie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/NotificationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cinema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NotificationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
@@ -22,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -34,12 +42,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yijiajiang/Documents/GitHub/CinemaTicketReservation&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/yijiajiang/Documents/GitHub/CinemaTicketReservation"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="JUnit.MovieRecommendationTest.testRecommendMoviesByGenre">
+    <configuration name="MovieRecommendationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CinemaTicketReservation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MovieRecommendationTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieRecommendationTest.testRecommendMoviesByGenre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CinemaTicketReservation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MovieRecommendationTest" />
+      <option name="METHOD_NAME" value="testRecommendMoviesByGenre" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="CinemaTicketReservation" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MovieRecommendationTest" />
+      <item itemvalue="JUnit.MovieRecommendationTest.testRecommendMoviesByGenre" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MovieRecommendationTest" />
+        <item itemvalue="JUnit.MovieRecommendationTest.testRecommendMoviesByGenre" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

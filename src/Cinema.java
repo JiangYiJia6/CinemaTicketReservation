@@ -2,48 +2,85 @@ import java.util.*;
 
 public class Cinema {
     private final NotificationService notificationService;
-    private final Map<Movie, List<String>> movieRatings;
+    private final Map<Movie, List<Integer>> movieRatings;
+
+    private final Map<String, Double> ticketPrices;
 
     String title,showtime;
-     int salle;
+    int salle;
 
-     public Cinema(){
+    double price;
 
-         notificationService =new NotificationService();
-         movieRatings = new HashMap<>();
-     }
+    public Cinema() {
+        notificationService = new NotificationService();
+        movieRatings = new HashMap<>();
 
-     public void Notify(Movie movieType){
-         notificationService.notifyUser(movieType);
-
-     }
-
-    public NotificationService getNotificationService(){
-         return notificationService;
-
+        ticketPrices=new HashMap<>();
     }
 
+    public void Notify(Movie movie) {
+        notificationService.notifyUsers(movie);
+    }
 
-    public void upload(String title,String showtime,int salle){
+    public NotificationService getNotificationService() {
+        return notificationService;
+    }
+
+    public void upload(String title,String showtime,int salle,double price){
         this.title=title;
         this.showtime=showtime;
         this.salle=salle;
+        this.price=price;
 
     }
-    public void rateMovie(Movie movieType, int score) {
-        if (movieRatings.containsKey(movieType)) {
-            movieRatings.get(movieType).add(String.valueOf(score));
-        } else {
-            List<String> Scores = new ArrayList<>();
-            Scores.add(String.valueOf(score));
-            movieRatings.put(movieType, Scores);
+
+    public void rateMovie(Movie movie, int score) {
+        movieRatings.computeIfAbsent(movie, rate -> new ArrayList<>()).add(score);
+        System.out.println("Rating added for movie: " + movie.getName() + ", Rating: " + score);
+    }
+
+    public List<Integer> getMovieRatings(Movie movie) {
+        return movieRatings.getOrDefault(movie, Collections.emptyList());
+    }
+
+    public Map<String, Movie> recommendMoviesByGenre(String genre) throws ErrorGenre {
+        Map<String, Movie> recommendedMoviesGenre = new HashMap<>();
+        for (Movie movie : movieRatings.keySet()) {
+            if (movie.getGenre().equalsIgnoreCase(genre)) {
+                recommendedMoviesGenre.put(movie.getName(), movie);
+            }
         }
+
+        if (!recommendedMoviesGenre.isEmpty()) {
+            System.out.println("Recommended movies in the " + genre + " genre:");
+            for (String movieName : recommendedMoviesGenre.keySet()) {
+                System.out.println(movieName);
+            }
+            return recommendedMoviesGenre;
+        }
+
+        throw new ErrorGenre("No movie in the '" + genre + "' genre");
     }
 
 
-    public List<String> getMovieRatings(Movie movieType) {
+    public Map<String, Movie> recommendMoviesByAge(int age) throws ErrorAge {
+        Map<String, Movie> recommendedMoviesAge = new HashMap<>();
+        for (Movie movie : movieRatings.keySet()) {
+            if (age<=18) {
+                recommendedMoviesAge.put(movie.getName(), movie);
+            }
+        }
 
-        return movieRatings.getOrDefault(movieType, Collections.emptyList());
+        if (!recommendedMoviesAge.isEmpty()) {
+            System.out.println("Recommended movies for age " + age + ":");
+            for (String movieName : recommendedMoviesAge.keySet()) {
+                System.out.println(movieName);
+
+            }
+            return recommendedMoviesAge;
+        }  throw new ErrorAge("no movie in this age");
+
 
     }
+
 }
