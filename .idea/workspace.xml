@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03f1121b-5021-40b1-b078-177a4d0b73eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MovieRecommendationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieRecommendationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieRecommendationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +40,23 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/yijiajiang/Documents/GitHub/CinemaTicketReservation&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MovieRecommendationTest.testRecommendMoviesByGenre">
+  <component name="RunManager" selected="JUnit.MovieRecommendationTest.testRecommendMoviesByAge">
     <configuration name="MovieRecommendationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CinemaTicketReservation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MovieRecommendationTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieRecommendationTest.testRecommendMoviesByAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CinemaTicketReservation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MovieRecommendationTest" />
+      <option name="METHOD_NAME" value="testRecommendMoviesByAge" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -68,13 +80,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.MovieRecommendationTest.testRecommendMoviesByAge" />
       <item itemvalue="JUnit.MovieRecommendationTest" />
       <item itemvalue="JUnit.MovieRecommendationTest.testRecommendMoviesByGenre" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MovieRecommendationTest" />
+        <item itemvalue="JUnit.MovieRecommendationTest.testRecommendMoviesByAge" />
         <item itemvalue="JUnit.MovieRecommendationTest.testRecommendMoviesByGenre" />
+        <item itemvalue="JUnit.MovieRecommendationTest" />
       </list>
     </recent_temporary>
   </component>

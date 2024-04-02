@@ -3,7 +3,7 @@ import java.util.*;
 public class Cinema {
     private final NotificationService notificationService;
     private final Map<Movie, List<Integer>> movieRatings;
-
+    private Map<String, Movie> movies = new HashMap<>();
     private final Map<String, Double> ticketPrices;
 
     String title,showtime;
@@ -14,7 +14,8 @@ public class Cinema {
     public Cinema() {
         notificationService = new NotificationService();
         movieRatings = new HashMap<>();
-
+        movies.put("Spider Man", new Movie("Spider Man", "Action", 12));
+        movies.put("Star War", new Movie("Star War", "Science Fiction", 18));
         ticketPrices=new HashMap<>();
     }
 
@@ -43,44 +44,25 @@ public class Cinema {
         return movieRatings.getOrDefault(movie, Collections.emptyList());
     }
 
-    public Map<String, Movie> recommendMoviesByGenre(String genre) throws ErrorGenre {
-        Map<String, Movie> recommendedMoviesGenre = new HashMap<>();
-        for (Movie movie : movieRatings.keySet()) {
-            if (movie.getGenre().equalsIgnoreCase(genre)) {
-                recommendedMoviesGenre.put(movie.getName(), movie);
+    public Map<String, Movie> recommendMoviesByGenre(String genre) {
+        Map<String, Movie> recommendedMovies = new HashMap<>();
+        for (Map.Entry<String, Movie> entry : movies.entrySet()) {
+            if (entry.getValue().getGenre().equals(genre)) {
+                recommendedMovies.put(entry.getKey(), entry.getValue());
             }
         }
+        return recommendedMovies;
 
-        if (!recommendedMoviesGenre.isEmpty()) {
-            System.out.println("Recommended movies in the " + genre + " genre:");
-            for (String movieName : recommendedMoviesGenre.keySet()) {
-                System.out.println(movieName);
-            }
-            return recommendedMoviesGenre;
-        }
-
-        throw new ErrorGenre("No movie in the '" + genre + "' genre");
     }
 
 
-    public Map<String, Movie> recommendMoviesByAge(int age) throws ErrorAge {
-        Map<String, Movie> recommendedMoviesAge = new HashMap<>();
-        for (Movie movie : movieRatings.keySet()) {
-            if (age<=18) {
-                recommendedMoviesAge.put(movie.getName(), movie);
+    public Map<String, Movie> recommendMoviesByAge(int age) {
+        Map<String, Movie> recommendedMovies = new HashMap<>();
+        for (Map.Entry<String, Movie> entry : movies.entrySet()) {
+            if (entry.getValue().getAge() <= age) {
+                recommendedMovies.put(entry.getKey(), entry.getValue());
             }
         }
-
-        if (!recommendedMoviesAge.isEmpty()) {
-            System.out.println("Recommended movies for age " + age + ":");
-            for (String movieName : recommendedMoviesAge.keySet()) {
-                System.out.println(movieName);
-
-            }
-            return recommendedMoviesAge;
-        }  throw new ErrorAge("no movie in this age");
-
-
+        return recommendedMovies;
     }
-
 }
