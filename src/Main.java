@@ -7,13 +7,24 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) throws ErrorGenre, ErrorAge {
         Scanner scanner = new Scanner(System.in);
-        Movie spiderMan = new Movie("Spider-Man", "Action",12);
-        Movie starWar = new Movie("Star Wars", "Science Fiction",18);
-        Movie killBill = new Movie("Kill Bill", "Action",18);
+        SpiderManBuilder spiderManBuilder=new SpiderManBuilder();
+        Movier movier1=new Movier((IBuilder) spiderManBuilder);
+        movier1.createMovie();
+        movier1.getMovie().display();
+
+        StarWarBuilder starWarBuilder=new StarWarBuilder();
+        Movier movier2=new Movier((IBuilder) starWarBuilder);
+        movier2.createMovie();
+        movier2.getMovie().display();
+
+
+        //Movie spiderMan = new Movie("Spider-Man", "Action",12);
+        //Movie starWar = new Movie("Star Wars", "Science Fiction",18);
+        //Movie killBill = new Movie("Kill Bill", "Action",18);
 
         Cinema cinema = new Cinema();
-        cinema.upload("spider man", "7:00 PM", 1,9.99);
-        cinema.upload("star war","8:00PM",1,10.99);
+        cinema.upload(movier1);
+        cinema.upload(movier2);
         System.out.println("Enter how many people you want to reserve");
         int people = Integer.parseInt(scanner.nextLine());
         User user1 = new User("Tom",people);
@@ -27,10 +38,10 @@ public class Main {
 
 
 
-        cinema.getNotificationService().reserve(user1,spiderMan);
-        cinema.getNotificationService().reserve(user2, starWar);
+        cinema.getNotificationService().reserve(user1,movier1);
+        cinema.getNotificationService().reserve(user2, movier2);
 
-        cinema.getNotificationService().unreserve(user2,spiderMan);
+        cinema.getNotificationService().unreserve(user2,movier2);
         Seat seat=new Seat(10,20);
         System.out.println("a row you want to seat");
         int row = Integer.parseInt(scanner.nextLine());
@@ -38,10 +49,10 @@ public class Main {
         int col = Integer.parseInt(scanner.nextLine());
         seat.bookSeat(row,col);
         seat.displaySeats();
-        cinema.Notify(spiderMan);
+        cinema.Notify(movier1);
 
-        user1.rateMovie(spiderMan,5);
-        cinema.getMovieRatings(spiderMan);
+        user1.rateMovie(movier1,5);
+        cinema.getMovieRatings(movier1);
 
 
 
@@ -55,8 +66,8 @@ public class Main {
 
         Employee e1=new Employee(123);
         e1.takeAttendace(user1,people);
-        e1.takePirces(spiderMan,9.99,people);
-        e1.reducePrice(user1,people,spiderMan,9.99);
+        e1.takePirces(movier1,9.99,people);
+        e1.reducePrice(user1,people,movier1,9.99);
 
 
 

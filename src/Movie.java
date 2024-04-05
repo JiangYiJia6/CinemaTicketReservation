@@ -31,4 +31,9 @@ public class Movie {
     public void setAge(int age) {
         this.age = age;
     }
+    public void display(){
+        System.out.println("Name is " + this.name);
+        System.out.println("Age is " + this.age);
+        System.out.println("Genre is " + this.genre);
+    }
 }
