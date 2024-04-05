@@ -14,10 +14,7 @@ public  class User implements MovieList {
     }
 
 
-    public void update(Movier movier) {
-        System.out.println("Hey " + name + ", the movie " +
-                movier.getMovie() + " is about to start.");
-    }
+
 
     public void reserveMovie(Cinema cinema, int numofPpl){
 
@@ -44,7 +41,8 @@ public  class User implements MovieList {
     }
 
     @Override
-    public void update(Movie movie) {
-
+    public void update(Movier movier) {
+        System.out.println("Hey " + name + ", the movie " +
+                movier.getMovie() + " is about to start.");
     }
 }

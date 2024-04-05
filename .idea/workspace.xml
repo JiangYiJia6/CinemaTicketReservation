@@ -6,6 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="03f1121b-5021-40b1-b078-177a4d0b73eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Cinema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Cinema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/MovieList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/MovieList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/NotificationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaTicketReservation/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaTicketReservation/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpiderManBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpiderManBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarWarBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarWarBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

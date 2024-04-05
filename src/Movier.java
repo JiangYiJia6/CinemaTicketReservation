@@ -5,9 +5,10 @@ public class Movier {
         this.iBuilder=iBuilder;
     }
     void createMovie(){
-        this.iBuilder.buidName();
+        this.iBuilder.buildName();
         this.iBuilder.buildGenre();
         this.iBuilder.buildAge();
+        this.iBuilder.buildPrice();
 
     }
     Movie getMovie(){

@@ -8,12 +8,12 @@ public class Main {
     public static void main(String[] args) throws ErrorGenre, ErrorAge {
         Scanner scanner = new Scanner(System.in);
         SpiderManBuilder spiderManBuilder=new SpiderManBuilder();
-        Movier movier1=new Movier((IBuilder) spiderManBuilder);
+        Movier movier1=new Movier(spiderManBuilder);
         movier1.createMovie();
         movier1.getMovie().display();
 
         StarWarBuilder starWarBuilder=new StarWarBuilder();
-        Movier movier2=new Movier((IBuilder) starWarBuilder);
+        Movier movier2=new Movier(starWarBuilder);
         movier2.createMovie();
         movier2.getMovie().display();
 

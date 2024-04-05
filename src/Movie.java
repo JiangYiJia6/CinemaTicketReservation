@@ -2,6 +2,7 @@ public class Movie {
     private String name;
     private String genre;
     private int age;
+    private double price;
 
 
     public Movie() {
@@ -31,9 +32,17 @@ public class Movie {
     public void setAge(int age) {
         this.age = age;
     }
+    public int getPrice() {
+        return age;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
     public void display(){
         System.out.println("Name is " + this.name);
         System.out.println("Age is " + this.age);
         System.out.println("Genre is " + this.genre);
+        System.out.println("price is"+this.price);
     }
 }

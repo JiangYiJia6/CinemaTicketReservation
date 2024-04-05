@@ -4,7 +4,7 @@ public class Cinema {
     private final NotificationService notificationService;
     private final Map<Movier, List<Integer>> movieRatings;
     private Map<String, Movie> movies = new HashMap<>();
-    private final Map<String, Double> ticketPrices;
+
 
     String title,showtime;
     Movier movier;
@@ -14,7 +14,7 @@ public class Cinema {
         movieRatings = new HashMap<>();
         movies.put("Spider Man", new Movie());
         movies.put("Star War", new Movie());
-        ticketPrices=new HashMap<>();
+
     }
 
     public void Notify(Movier movier) {

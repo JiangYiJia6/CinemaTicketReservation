@@ -1,7 +1,8 @@
 public interface IBuilder {
-    void buidName();
+    void buildName();
 
     void buildAge();
     void buildGenre();
+    void buildPrice();
     Movie getMovie();
 }
