@@ -2,45 +2,40 @@ import java.util.*;
 
 public class Cinema {
     private final NotificationService notificationService;
-    private final Map<Movie, List<Integer>> movieRatings;
+    private final Map<Movier, List<Integer>> movieRatings;
     private Map<String, Movie> movies = new HashMap<>();
     private final Map<String, Double> ticketPrices;
 
     String title,showtime;
-    int salle;
-
-    double price;
+    Movier movier;
 
     public Cinema() {
         notificationService = new NotificationService();
         movieRatings = new HashMap<>();
-        movies.put("Spider Man", new Movie("Spider Man", "Action", 12));
-        movies.put("Star War", new Movie("Star War", "Science Fiction", 18));
+        movies.put("Spider Man", new Movie());
+        movies.put("Star War", new Movie());
         ticketPrices=new HashMap<>();
     }
 
-    public void Notify(Movie movie) {
-        notificationService.notifyUsers(movie);
+    public void Notify(Movier movier) {
+        notificationService.notifyUsers(movier);
     }
 
     public NotificationService getNotificationService() {
         return notificationService;
     }
 
-    public void upload(String title,String showtime,int salle,double price){
-        this.title=title;
-        this.showtime=showtime;
-        this.salle=salle;
-        this.price=price;
+    public void upload(Movier movier){
+        this.movier=movier;
 
     }
 
-    public void rateMovie(Movie movie, int score) {
-        movieRatings.computeIfAbsent(movie, rate -> new ArrayList<>()).add(score);
-        System.out.println("Rating added for movie: " + movie.getName() + ", Rating: " + score);
+    public void rateMovie(Movier movier, int score) {
+        movieRatings.computeIfAbsent(movier, rate -> new ArrayList<>()).add(score);
+        System.out.println("Rating added for movie: " + movier.getMovie() + ", Rating: " + score);
     }
 
-    public List<Integer> getMovieRatings(Movie movie) {
+    public List<Integer> getMovieRatings(Movier movie) {
         return movieRatings.getOrDefault(movie, Collections.emptyList());
     }
 

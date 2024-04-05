@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class User implements MovieList {
+public  class User implements MovieList {
     Cinema cinema;
     private final Map<User, Integer> loyaltyPoints;
     private final String name;
@@ -13,10 +13,10 @@ public class User implements MovieList {
         this.loyaltyPoints = new HashMap<>();
     }
 
-    @Override
-    public void update(Movie movie) {
+
+    public void update(Movier movier) {
         System.out.println("Hey " + name + ", the movie " +
-                movie.getName() + " in genre " + movie.getGenre() + " is about to start.");
+                movier.getMovie() + " is about to start.");
     }
 
     public void reserveMovie(Cinema cinema, int numofPpl){
@@ -25,9 +25,9 @@ public class User implements MovieList {
 
         System.out.println("You have reserverd "+ cinema.title+" for"+numofPpl);
     }
-    public void rateMovie(Movie movie, int score) {
-        cinema.rateMovie(movie, score);
-        System.out.println("You have rated the movie " + movie.getName() + ": " + score);
+    public void rateMovie(Movier movier, int score) {
+        cinema.rateMovie(movier, score);
+        System.out.println("You have rated the movie " + movier.getMovie() + ": " + score);
     }
 
     public void earnPoints(int points) {
@@ -41,5 +41,10 @@ public class User implements MovieList {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void update(Movie movie) {
+
     }
 }
