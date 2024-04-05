@@ -3,11 +3,11 @@ public class Movie {
     private String genre;
     private int age;
 
-    public Movie(String name, String genre,int age) {
-        this.name = name;
-        this.genre = genre;
-        this.age=age;
+
+    public Movie() {
+
     }
+
 
     public String getName() {
         return name;
